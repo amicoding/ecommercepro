@@ -9,9 +9,9 @@ import { CiShoppingCart } from "react-icons/ci";
 const Header = () => {
   return (
     
-    <header className="bg-[#7E33E0] text-white py-3 m-0 p-0">
+    <header className="bg-[#7E33E0] text-white py-3">
       
-      <div className="container mx-auto">
+      <div className="mx-auto container">
         
         <div className="flex justify-between">
         <div className="flex items-center gap-2">
