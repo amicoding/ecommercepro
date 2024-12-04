@@ -9,7 +9,7 @@ import { CiShoppingCart } from "react-icons/ci";
 const Header = () => {
   return (
     
-    <header className="bg-[#7E33E0] text-white py-3">
+    <header className="bg-[#7E33E0] text-white py-3 font-josef ">
       
       <div className="mx-auto container">
         
@@ -30,11 +30,24 @@ const Header = () => {
         <div className="">
           
           <ul className="flex items-center gap-3">
-            <li className="flex items-center gap-2">English<FaAngleDown/></li>
-            <li className="flex items-center gap-2">USD<FaAngleDown/></li>
+            <li className="flex items-center gap-2">
+              <select className="bg-transparent">
+                <option className="bg-[#7E33E0]">English<FaAngleDown/></option>
+                <option className="bg-[#7E33E0]">Bangla<FaAngleDown/></option>
+                <option className="bg-[#7E33E0]">Arabic<FaAngleDown/></option>
+                <option className="bg-[#7E33E0]">Urdu<FaAngleDown/></option>
+              </select>
+            </li>
+            <li className="flex items-center gap-2">
+              <select className="bg-transparent">
+                <option value="" className="bg-[#7E33E0]">USD<FaAngleDown/></option>
+                <option className="bg-[#7E33E0]">BDT<FaAngleDown/></option>
+                <option className="bg-[#7E33E0]">SAR<FaAngleDown/></option>
+              </select>
+            </li>
             <li className="flex items-center gap-2">Login<FaRegUser/></li>
             <li className="flex items-center gap-2">Wishlist<CiHeart/></li>
-            <li className="flex items-center gap-2"><CiShoppingCart/></li>
+            <li className="flex items-center gap-2"><CiShoppingCart className="text-4xl"  /></li>
           </ul>
           
         </div>
