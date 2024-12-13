@@ -7,8 +7,15 @@ export default {
   theme: {
     extend: {
       
-      'josef': ["Josefin Sans", "sans-serif"],
+      fontFamily: {
+         'josef': ["Josefin Sans", "sans-serif"],
       'lato': ["Lato", "sans-serif"]
+      },
+      
+      colors: {
+        'primary': "#FB2E86"
+      }
+     
       
     },
   },

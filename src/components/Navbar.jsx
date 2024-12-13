@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
   return (
-    <nav className="py-5">
+    <nav className="py-5 z-50">
       <div className="container mx-auto">
         
         <div className="flex items-center gap-5 justify-between">
@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="">
           <ul className="flex items-center gap-3">
             <li className="flex items-center gap-2 relative group">Home<FaAngleDown/>
-            <ul className="absolute top-6 left-0 hidden group-hover:block">
+            <ul className="absolute top-6 left-0 hidden group-hover:block bg-primary text-white p-3 font-bold rounded z-40 ">
               <li>page1</li>
               <li>page2</li>
               <li>page3</li>

@@ -4,18 +4,24 @@ import './App.css'
 import Header from './components/Header.jsx'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
+import Featured from './components/Featured.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <section>
     
+      
+     <section>
     <Header/>
     <Navbar/>
     <Hero/>
+    <Featured/>
    
     </section>
+      
+    
+   
   )
 }
 
