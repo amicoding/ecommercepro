@@ -12,7 +12,7 @@ const Featured = () => {
  
   return (
     <section>
-      <div className="">
+      <div className="mt-6">
         <div className="container mx-auto">
           
           <div className="">
