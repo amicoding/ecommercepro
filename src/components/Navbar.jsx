@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Logo from "../assets/Hekto.png"
 import { FaAngleDown } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
@@ -9,23 +10,26 @@ const Navbar = () => {
       <div className="container mx-auto">
         
         <div className="flex items-center gap-5 justify-between">
-         <img src={Logo} alt="" />
+          <Link to='/'><img src={Logo}  alt="Hekto Logo" /></Link>
           <div className="">
           <ul className="flex items-center gap-3">
-            <li className="flex items-center gap-2 relative group">Home<FaAngleDown/>
+            <li className="flex items-center gap-2 relative group"><Link to='/'>Home</Link><FaAngleDown/>
             <ul className="absolute top-6 left-0 hidden group-hover:block bg-primary text-white p-3 font-bold rounded z-40 ">
-              <li>page1</li>
-              <li>page2</li>
-              <li>page3</li>
-              <li>page4</li>
+              
+                 <li>Pages</li>
+            <li><Link to='/product'>Products</Link></li>
+            <li><Link to='/shop'>Shop</Link></li>
+            <li><Link to='/blog'>Blog</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
+            
             </ul>
             
             </li>
             <li>Pages</li>
-            <li>Products</li>
-            <li>Blog</li>
-            <li>Shop</li>
-            <li>Contact</li>
+            <li><Link to='/product'>Products</Link></li>
+            <li><Link to='/shop'>Shop</Link></li>
+            <li><Link to='/blog'>Blog</Link></li>
+            <li><Link to='/contact'>Contact</Link></li>
           </ul>
         </div>
         

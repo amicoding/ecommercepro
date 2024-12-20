@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Sofa from "../assets/sofa.png"
 import Bell from "../assets/bell.png"
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
             Trends in 2020</h1>
             <p className="font-lato font-bold text-[#8A8FB9] text-[16px] pb-7 pr-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
           in phasellus non in justo.</p>
-             <button className="bg-primary text-white font-josef font-semibold px-10 py-4" type="submit">Shop Now</button>
+             <button className="bg-primary text-white font-josef font-semibold px-10 py-4" type="submit"><Link  to='/shop'>Shop Now</Link></button>
           </div>
           
           <div>

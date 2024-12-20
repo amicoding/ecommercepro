@@ -1,9 +1,15 @@
 import React from 'react'
 
+import Hero from '../components/Hero.jsx'
+import Featured from '../components/Featured.jsx'
+
 const Home = () => {
   return (
     <div>
-      Home page
+   
+      <Hero/>
+      <Featured/>
+      
     </div>
   )
 }
